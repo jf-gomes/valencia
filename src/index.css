@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navBtn{
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    margin: .3rem;
+}
+
+.navBtn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

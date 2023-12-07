@@ -1,0 +1,73 @@
+.productImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px -3px;
+}
+
+.productsContainerDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-image: linear-gradient(to right, #fff, #ecd9ec);
+    padding: 1rem;
+}
+
+.productsContentDiv{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.productDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productLabel, .productPrice{
+    text-align: center;
+    padding: .8rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.productPrice{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.minusBtn, .plusBtn{
+    border: none;
+    padding: .5rem;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.addBtn{
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 10px -3px;
+    padding: .8rem;
+    border-radius: 8px;
+    font-size: 1.1em;
+    transition: .3s;
+}
+
+.addBtn:hover{
+    background-color: #4D194D;
+    color: white;
+    cursor: pointer;
+}
+
+.minusBtn:hover, .plusBtn:hover{
+    background-color: #ec5fec;
+    cursor: pointer;
+}
