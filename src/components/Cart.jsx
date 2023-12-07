@@ -1,12 +1,18 @@
 import styles from './Cart.module.css'
 import Header from './Header'
 import { AuthContext } from '../contexts/auth'
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function Cart(){
 
     const {cartItems, setCartItems, setTotalPrice, totalPrice} = useContext(AuthContext)
+
+    useEffect(() => {
+        if (totalPrice < 0){
+            setTotalPrice(0)
+        }
+    }, [totalPrice])
 
     return (
         <>
