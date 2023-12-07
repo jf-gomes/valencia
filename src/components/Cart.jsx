@@ -27,7 +27,7 @@ export default function Cart(){
                             </div>
                         </div>
                         <div onClick={() => {
-                            let newList = cartItems.filter((i) => i.id != e.id)
+                            let newList = cartItems.filter((i) => i.cartId != e.cartId)
                             setTotalPrice((totalPrice - (e.qnt * e.price)))
                             setCartItems(newList)
                         }} className={styles.productRightDiv}>
@@ -44,7 +44,7 @@ export default function Cart(){
                         <p style={{fontSize: '1.3em', fontWeight: 'bold'}}>R${totalPrice.toFixed(2)}</p>
                         <div className={styles.totalPriceDivBtnDiv}>
                             <button className={styles.placeOrderBtn}>Finalizar pedido</button>
-                            <Link to='/'><button className={styles.addMoreItemsBtn}>Adicionar mais itens</button></Link>
+                            <Link to='/restaurant-order-website/'><button className={styles.addMoreItemsBtn}>Adicionar mais itens</button></Link>
                         </div>
                     </div>
                 </div>

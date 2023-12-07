@@ -39,7 +39,8 @@ export default function PopularItems(){
                                 price: e.price,
                                 img: e.img,
                                 popularity: e.popularity,
-                                qnt: e.qnt
+                                qnt: e.qnt,
+                                cartId: cartItems.length + 1,
                             })
                             setCartItems(newList)
                             setTotalPrice(totalPrice + (e.price * e.qnt))
