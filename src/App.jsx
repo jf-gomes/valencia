@@ -8,8 +8,8 @@ export default function App(){
         <AuthProvider>
             <Router>
                 <Routes>
-                    <Route path="/" element={<Home />}></Route>
-                    <Route path="/cart" element={<Cart />}></Route>
+                    <Route path="/restaurant-order-website/" element={<Home />}></Route>
+                    <Route path="/restaurant-order-website/cart" element={<Cart />}></Route>
                 </Routes>
             </Router>
         </AuthProvider>
