@@ -50,7 +50,7 @@ export default function Cart(){
                         <p style={{fontSize: '1.3em', fontWeight: 'bold'}}>R${totalPrice.toFixed(2)}</p>
                         <div className={styles.totalPriceDivBtnDiv}>
                             <button className={styles.placeOrderBtn}>Finalizar pedido</button>
-                            <Link to='/restaurant-order-website/'><button className={styles.addMoreItemsBtn}>Adicionar mais itens</button></Link>
+                            <Link to='/valencia/'><button className={styles.addMoreItemsBtn}>Adicionar mais itens</button></Link>
                         </div>
                     </div>
                 </div>
